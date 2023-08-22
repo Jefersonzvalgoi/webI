@@ -1,0 +1,27 @@
+/*cores em rgb*/
+h1{
+    color: rgb(red, green, blue);
+}
+/*cores em hexadecimal*/
+p{
+    color: #ffa500;
+}
+/* # chama um id*/
+#primeiro_subtitulo{
+    color: olive;
+}
+/* . chama classe*/
+.especial{
+   color: purple;
+}
+/*seletor de elemento filho*/
+p>span{
+    color: salmon;
+}
+
+/*seletor de elemento irmao
+nesse caso o paragrafo irmao de um paragrafo (todo paragrafo que é antecedido por um paragrafo)
+recebe esse estilo*/
+p+p{
+    color: yellow;
+}
