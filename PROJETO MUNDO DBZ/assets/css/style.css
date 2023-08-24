@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Saiyan';
+    src: url('../fonts/Saiyan-Sans.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*seleciona o primeiro header filho do body*/
+body>header:nth-child(1){
+    background-color: #e55e2e;
+}
+/* seleciona a imagen descendente do primeiro header filho do body*/
+body>header:nth-child(1) img{
+    /* rem = porcentagem do elemento raiz(HTML)*/
+    width: 1.09375rem;
+}
