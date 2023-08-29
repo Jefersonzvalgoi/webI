@@ -2,17 +2,60 @@
     font-family: 'Saiyan';
     src: url('../fonts/Saiyan-Sans.ttf');
 }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
 }
 /*seleciona o primeiro header filho do body*/
 body>header:nth-child(1){
     background-color: #e55e2e;
+    display: flex;
+    align-items: center;
+    /*padding pode ser de 1, 2 e 4 valores diferentes(1=todas as direções iguais
+    2=cima e  baixo igual, esquerda e direita igual
+    4=um valor pra cada lado em sentido horário)*/
+    padding: 0.56rem 0.87rem;
 }
-/* seleciona a imagen descendente do primeiro header filho do body*/
-body>header:nth-child(1) img{
+
+body > header:nth-child(1) > div{
+    width: 100%;
+    display: flex;
+    /*justify-content manipula o eixo x(horizontal) 
+    aling-itens manupula o eixo y (vertical)*/
+    justify-content: center;
+    align-items: center;
+}
+
+/* seleciona a imagen descendente do primeiro header filho do body, dentro de uma tag div*/
+body > header:nth-child(1) > div > img{
     /* rem = porcentagem do elemento raiz(HTML)*/
     width: 1.09375rem;
+    height: 1.25rem;
+    margin: 0.65rem;
+}
+/**/
+/**/
+/* Seleciona o span descendente do primeiro heder filho do body, dentro de uma tag div*/
+body > header:nth-child(1) > div > span{
+    font-family: "Saiyan", sans-serif;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+/*Selesiona a tg nav dentro do body*/
+body > nav{
+    background-color: #fda402;
+    color: #ffffff;
+    font-size: 0.75rem;
+    padding: 0.44rem 0.63rem;
+}
+a:link,a:visited{
+    color: #ffffff;
+    text-decoration: none;
+}
+/* Seleciona o terceirofilho da tag nav*/
+body > nav > span:nth-child(3){
+    text-decoration:underline;
 }
