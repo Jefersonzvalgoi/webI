@@ -1,0 +1,21 @@
+@import url("style.css");
+
+/* Estilo especifico da pagina Characters*/
+
+body > nav + article{
+    background-image: url("../imgs/galeria.jpg");
+}
+
+section.card{
+    display: flex;
+}
+
+section.card > img {
+    margin-right: 1.25rem;
+    margin-left: 1rem;
+}
+
+section.card > article > ul{
+    font-size: 0.75rem;
+    list-style: none;
+}

@@ -1,0 +1,7 @@
+@import url("style.css");
+
+/* CSS especifico da pagina*/
+
+body > nav + article{
+    background-image: url("../imgs/historia.jpg");
+}
