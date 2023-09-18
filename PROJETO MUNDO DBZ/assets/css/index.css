@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Saiyan';
+    src: url('../fonts/Saiyan-Sans.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+a:link,a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+main{
+    margin: 1.5rem;
+}
+.card{
+    border-radius: 0.5rem;
+    margin-bottom: 0.50rem;
+    border: 0.25rem solid #ac0117;  
+    color: #ffffff;  
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+}
+body > header:nth-child(1){
+    background-color: #e55e2e;
+    display: flex;
+    align-items: center;
+    padding: 0.56rem 0.87rem;
+}
+body > header:nth-child(1) > div > img{
+    /* rem = porcentagem do elemento raiz(HTML)*/
+    width: 1.09375rem;
+    height: 1.25rem;
+    margin: 0.65rem;
+}
+
+body > header:nth-child(1) > div{
+    width: 100%;
+    display: flex;
+    /*justify-content manipula o eixo x(horizontal) 
+    aling-itens manupula o eixo y (vertical)*/
+    justify-content: center;
+    align-items: center;
+}
+body > header:nth-child(1) > div > span{
+    font-family: "Saiyan", sans-serif;
+    color: #ffffff;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+body > main > section{
+    display: flex;
+    align-items: end;
+}
+body > main> section > article{
+    background-color: #ac0117cc;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1,25rem;
+}
+body > main > section:nth-child(1){
+    background-image: url("../imgs/historia.jpg");
+}
+body > main > section:nth-child(2){
+    background-image: url("../imgs/akira.jpg");
+}
+body > main > section:nth-child(3){
+    background-image: url("../imgs/galeria.jpg");
+}
+body > main > section:nth-child(4){
+    background-image: url("../imgs/pedidos.jpg");
+}
+
+footer{
+    background-color: #e55e2e;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color: #ffffff;
+}

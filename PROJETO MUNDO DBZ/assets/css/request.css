@@ -1,0 +1,21 @@
+@import url(style.css);
+
+body > nav + article{
+    background-image: url("../imgs/pedidos.jpg");
+}
+
+section.card{
+    display: flex;
+}
+
+section.card > img {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+section.card > article > ul{
+    font-size: 0.75rem;
+    list-style: url("../imgs/esfera_do_dragao.png") inside;
+}
