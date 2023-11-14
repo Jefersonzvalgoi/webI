@@ -1,0 +1,9 @@
+:root{
+  --bg-gray-dark: #23272f;
+  --bg-gray-light: #374151;
+  --link-color: #149eca;
+}
+
+body{
+  background-color: var(--bg-gray-dark);
+}

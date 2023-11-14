@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <main class="w-100 vh-100 d-flex justify-content-center align-items-center">
+      <div class="card bg-primary w-50 h-25 p-4">
+        <form>
+          <div class="row">
+            <div class="col">
+              
+              <label for="number_one">Primeiro número</label>
+              <input type="number" class="form-control" id="number_one">
+              
+            </div>
+            <div class="col">              
+              <label for="number_two">Segundo número</label>
+              <input type="number" class="form-control" id="number_two">
+            </div> 
+          </div>
+          <div class="row" >
+            <div class="col d-flex justify-content-center">
+              <div class="btn-group mt-5">
+                <button type="button" class="btn btn-light" onclick="showResult('+')">+</button>
+                <button type="button" class="btn btn-light" onclick="showResult('-')">-</button>
+                <button type="button" class="btn btn-light" onclick="showResult('*')">x</button>
+                <button type="button" class="btn btn-light" onclick="showResult('/')">/</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main> 
+    <!--Scripts sempre no final do body para evitar erros de criação de elemento-->
+    <script src="index.js"></script>
+  </body>
+</html>
